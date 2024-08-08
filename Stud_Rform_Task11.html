@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Student Registration Form</title>  
+    <style>  
+        * {  
+            box-sizing: border-box;  
+        }  
+        body {  
+            font-family: 'Times New Roman', Times, serif;  
+            background-color: rgb(163, 245, 169);  
+            margin: 0;  
+            padding: 20px;  
+        }  
+        h1 {  
+            text-align: center;  
+            background-color: rgb(224, 239, 12);  
+            padding: 10px;  
+            color: red;  
+        }  
+        form {  
+            max-width: 700px;  
+            margin: 0 auto;  
+            padding: 20px;  
+            border: 1px solid white;  
+            border-radius: 10px;  
+            background: white;  
+        }  
+        fieldset {  
+            border: 2px solid rgb(15, 14, 14);  
+            padding: 20px;  
+            margin-bottom: 20px;  
+        }  
+        legend {  
+            font-weight: bold;  
+            font-size: 1.2em;  
+        }  
+        label {  
+            display: block;  
+            margin: 10px 0 5px;  
+            font-weight: bold;  
+        }  
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {  
+            width: 95%;  
+            padding: 10px;  
+            border: 1px solid rgb(217, 142, 142);  
+            border-radius: 4px;  
+            margin-bottom: 15px;  
+        }  
+        input[type="submit"], input[type="reset"] {  
+            background-color: rgb(23, 218, 143);  
+            color: white;  
+            border: none;  
+            padding: 10px 20px;  
+            margin: 10px 5px;  
+            cursor: pointer;  
+            border-radius: 4px;  
+            font-size: 1em;  
+        }  
+        .university-logo {  
+            display: block;  
+            margin: 0 auto 20px;  
+            height: 218px;  
+            width: 300px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <h1>Mohan Babu University</h1>  
+        <h2 style="text-align: center;">Student Registration Form</h2>  
+    </header>  
+
+    <img src="MBU.png" alt="Mohan Babu University Logo" class="university-logo">  
+    
+    <form action="/submit_registration" method="post">  
+        <fieldset>  
+            <legend>Student Details</legend>  
+            <div>  
+                <label for="fname">First Name:</label>  
+                <input type="text" id="fname" name="fname" required>  
+            </div>  
+            <div>  
+                <label for="lname">Last Name:</label>  
+                <input type="text" id="lname" name="lname" required>  
+            </div>  
+            <div>  
+                <label for="father">Father's Name:</label>  
+                <input type="text" id="father" name="father" required>  
+            </div>  
+            <div>  
+                <label for="mother">Mother's Name:</label>  
+                <input type="text" id="mother" name="mother">  
+            </div>  
+            <div>  
+                <label for="email">Email Address:</label>  
+                <input type="email" id="email" name="email" required>  
+            </div>  
+            <div>  
+                <label for="phone">Phone Number:</label>  
+                <input type="tel" id="phone" name="phone">  
+            </div>  
+            <div>  
+                <label for="dob">Date of Birth:</label>  
+                <input type="date" id="dob" name="dob" required>  
+            </div>  
+            <div>  
+                <label for="gender">Gender:</label>  
+                <select id="gender" name="gender" required>  
+                    <option value="male">Male</option>  
+                    <option value="female">Female</option>  
+                    <option value="other">Other</option>  
+                </select>  
+            </div>  
+        </fieldset>  
+
+        <fieldset>  
+            <legend>Address</legend>  
+            <div>  
+                <label for="address">Street:</label>  
+                <input type="text" id="address" name="address" required>  
+            </div>  
+            <div>  
+                <label for="city">City:</label>  
+                <input type="text" id="city" name="city" required>  
+            </div>  
+            <div>  
+                <label for="state">State:</label>  
+                <input type="text" id="state" name="state" required>  
+            </div>  
+            <div>  
+                <label for="zip">Pin Code:</label>  
+                <input type="text" id="zip" name="zip" required>  
+            </div>  
+        </fieldset>  
+
+        <fieldset>  
+            <legend>Course Selection</legend>  
+            <div>  
+                <label for="course">Course Preference:</label>  
+                <select id="course" name="course" required>  
+                    <option value="" disabled selected>Select a course</option>  
+                    <option value="foundations_of_data_science">Foundations of Data Science</option>  
+                    <option value="web_technologies">Web Technologies</option>  
+                    <option value="design_and_analysis_of_algorithm">Design and Analysis of Algorithm</option>  
+                    <option value="cloud_computing">Cloud Computing</option>  
+                    <option value="machine_learning">Machine Learning</option>  
+                </select>  
+            </div>  
+        </fieldset>  
+        
+        <div style="text-align:center;">  
+            <input type="submit" value="Register">  
+            <input type="reset" value="Clear all">  
+        </div>  
+    </form>  
+</body>  
+</html>

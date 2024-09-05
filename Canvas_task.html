@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canvas</title>
+    <style>
+        canvas{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var c = canvas.getContext("2d");
+        c.fillStyle = "blue";
+        c.fillRect(20, 20, 60, 60);
+        c.beginPath(); 
+        c.moveTo(20, 30);
+        c.lineTo(160, 160);
+        c.strokeStyle = "gold";
+        c.stroke();
+        c.beginPath(); 
+        c.arc(100, 100, 40, 0, Math.PI * 2);
+        c.strokeStyle = "red";
+        c.stroke();
+    </script>
+</body>
+</html>

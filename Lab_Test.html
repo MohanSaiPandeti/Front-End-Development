@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Showcase</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+        }
+        h2{
+            font-size: xx-large;
+        }
+        .navbar{
+            font-size: x-large;
+            background-color: #4a6b72;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+        .navbar a{
+            display: inline-block;
+            color: #fff;
+            padding: 14px 20px;
+        }
+        .navbar a:hover{
+            background-color: #c2bebe;
+            color: #333;
+        }
+        .container{
+            padding: 20px;
+            text-align: center;
+        }
+        .movie-imgs{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .movie-item {
+            text-align: center;
+            flex: 1;
+            max-width: 180px;
+        }
+        .movie-item img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        .movie-item figcaption{
+            margin-top: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        form label{
+            margin: 10px 0 5px;
+            font-size: 16px;
+        }
+        form input[type="text"], form input[type="email"], form input[type="password"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #d3cece;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4a6b72;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a6b72;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="container">
+        <h2>Trending Movies</h2>
+        <div class="movie-imgs">
+            <figure class="movie-item">
+                <img src="https://th.bing.com/th/id/OIP.I7xlLNzKdepPZYEVMW4YbAHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="OG">
+                <figcaption>OG</figcaption>
+            </figure>
+            <figure class="movie-item">
+                <img src="https://th.bing.com/th/id/OIP.CyX2sC7s8ZIMtx5Z0h4LMQHaKf?w=188&h=266&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="Gabbar Singh">
+                <figcaption>Gabbar Singh</figcaption>
+            </figure>
+            <figure class="movie-item">
+                <img src="https://th.bing.com/th/id/OIP.5ztuJWa-NZuYhTpMEyyLrQHaLG?rs=1&pid=ImgDetMain" alt="Jalsa">
+                <figcaption>Jalsa</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="container">
+        <h3 id="register">For updates, register here</h3>
+        <form action="submit">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email Id: </label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

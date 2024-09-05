@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Account Deactivation Form</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 350px;
+        }
+        h2 {
+            text-align: center;
+            color: #2d2c2c;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #5c5c5c;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #d1d0d0;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        button {
+            padding: 10px;
+            background-color: #dc3545;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Account Deactivation</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="reason">Reason for Deactivation:</label>
+            <select id="reason" name="reason" required>
+                <option value="">Select a reason</option>
+                <option value="privacy">Privacy issues & Concerns</option>
+                <option value="addictive">Too Addictive</option>
+                <option value="bad_UI">Bad User Interface</option>
+                <option value="not_useful">Not useful</option>
+                <option value="abuse">Vulgarity</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <button type="submit">Deactivate Account</button>
+        </form>
+    </div>
+
+</body>
+</html>

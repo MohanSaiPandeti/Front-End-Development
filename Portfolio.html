@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mohan Sai's Portfolio</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header{
+            background-color: #282c34;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        h1{
+            font-size: 36px;
+            margin: 0;
+            font-weight: 700;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            background-color: #61dafb;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a{
+            margin: 0 20px;
+            text-decoration: none;
+            color: #282c34;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .hero{
+            background-image: url('MS1-pic.png');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            margin-bottom: 40px;
+        }
+        .hero h2{
+            font-size: 48px;
+            font-weight: bold;
+        }
+        section{
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #61dafb;
+            padding-bottom: 10px;
+        }
+        .project{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .project img{
+            max-width: 40%;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project img:hover{
+            transform: scale(1.05);
+        }
+        .project p{
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        footer{
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer p{
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mohan Sai's Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Welcome to My Portfolio</h2>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm P Mohan Sai, currently pursuing my bachelor's degree in B.Tech (Data Science) Specialization. I love transforming plain interfaces into marvelous designs.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <img src="Sem_results.png" alt="Project 1">
+            <p>This project is about Semester end results containing details of subjects, CGPA, SGPA information.</p>
+        </div>
+
+        <div class="project">
+            <img src="Movie_review.png" alt="Project 2">
+            <p>A movie review website featuring movie crew and cast, budget, gross and movie related information.</p>
+        </div>
+
+        <div class="project">
+            <img src="Sem_results.png" alt="Project 3">
+            <p>This project is about Semester end results containing details of subjects, CGPA, SGPA information.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:pandetimohansai@gmail.com">pandetimohansai@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/mohansaipandeti">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mohan Sai's Portfolio</p>
+    </footer>
+</body>
+
+</html>
